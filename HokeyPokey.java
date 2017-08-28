@@ -25,7 +25,7 @@ public class HokeyPokey
 	 */
 	public static void putItIn(String part)
 	{
-		
+		System.out.println("You put your " + part + " in");
 		
 	}
 	
@@ -36,7 +36,7 @@ public class HokeyPokey
 	 */
 	public static void putItOut(String part)
 	{
-		
+		System.out.println("You put your " + part + " out");
 		
 	}
 		
@@ -59,10 +59,10 @@ public class HokeyPokey
 	 */
 	public static void singIt(String p) // sings all lines for a part p
 	{
-	
-	
-	
-	
+	putItIn(p);
+	putItOut(p);
+	putItIn(p);
+	shakeIt();
 	}
 
 
