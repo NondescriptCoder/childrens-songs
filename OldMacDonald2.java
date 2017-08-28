@@ -8,51 +8,48 @@
  */
 
 
-public class OldMacDonald2 
+public class OldMacDonald2 //Plays children's song Old MacDonald
 {
     
-    public static void eieio() 
+    public static void eieio() //Prints EIEIO line
     { 
         System.out.println("Old MacDonald had a farm, E I E I O.");
     }
 
 
-    public static void hadA(String animal) 
+    public static void hadA(String animal) //Prints line explaining present animal
     { 
         System.out.println("And on that farm he had a " + animal + ", E I E I O.");
     }
 
 
-    public static void withA(String sound) 
+    public static void withA(String sound)  //Prints lines utilizing animal sound
     { 
         System.out.println("With a " + sound + " " + sound +  " here and a " + sound + " " + sound +  " there.");
         System.out.println("Here a " + sound + ", there a " + sound + ", everywhere a " + sound + ", " + sound + ".");  
     }
 
     
-    public static void singIt(String animal, String sound) 
+    public static void singIt(String animal, String sound)// Consolidates the invidual lines into verses 
     {
-        eieio();
+        //following lines activate lines of the song
+        eieio();       
         hadA(animal);
         withA(sound);
         eieio();
-        System.out.println();
+        System.out.println(); //Allows for spacing between verses
     }
 
     
-    public static void main(String[] args) 
+    public static void main(String[] args)// Outputs a verse for each instance of singIt();  
     {
-        System.out.println("Old MacDonald Had A Farm\n"); // Give our        song a title
-
+        System.out.println("Old MacDonald Had A Farm\n"); // Gives song a title
+        // Below, list the name of the animal and the sound respectively
         singIt("duck", "quack");
         singIt("cow", "moo");
         singIt("horse", "neigh");
         singIt("platypus","gdggdggddgdg");
-        
-        // now see how easy it is to add some more animals  
-        
-        
-        // modify the methods above to get quotation marks around the animal sounds
+        //Add more animals and sounds below here
     }
     
 }
