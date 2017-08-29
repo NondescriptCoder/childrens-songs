@@ -9,12 +9,16 @@
 
 public class AntsGoMarching 
 {
+   /**
+    * Determines whether to use the alternate stanza ending
+    */
+    static int progress = 0;
     /**
      * Sings the first two lines.
      *
      * @param Number (as a word) for how the ants march
      */
-    static int progress = 0;
+    
     
     
     public static void goMarching(String number) 
@@ -72,7 +76,7 @@ public class AntsGoMarching
         noHurrah(n);
         littleAnt(action);
         rain();
-        progress = progress + 1;
+        progress++;
     }
 
     /**
