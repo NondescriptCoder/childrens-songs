@@ -8,64 +8,65 @@
  */
 
 
-public class OldMacDonald2 
+public class OldMacDonald2 //Plays children's song Old MacDonald
 {
      /**
-     * Sings the EIEIO line
+     * Sings the EIEIO line.
      */
-    public static void eieio() 
+    public static void eieio() //Prints EIEIO line
     { 
         System.out.println("Old MacDonald had a farm, E I E I O.");
     }
-   
-     /**
-     * Sings the second line.
+
+    /**
+     * Sings the second line
      *
-     * @param animal (as a word) for the specific animal present on the farm
+     * @param animal (as a word) for which animal is on the farm
      */
-    public static void hadA(String animal) 
+    public static void hadA(String animal) //Prints line explaining present animal
     { 
         System.out.println("And on that farm he had a " + animal + ", E I E I O.");
     }
 
      /**
-     * Sings the third line.
+     * Sings the third line
      *
-     * @param sound (as a word) for the sound each animal makes
+     * @param sound (as a word) for the sound made by each animal
      */
-    public static void withA(String sound) 
+    public static void withA(String sound)  //Prints lines utilizing animal sound
     { 
         System.out.println("With a " + sound + " " + sound +  " here and a " + sound + " " + sound +  " there.");
         System.out.println("Here a " + sound + ", there a " + sound + ", everywhere a " + sound + ", " + sound + ".");  
     }
 
-     /**
-     * Sings a verse of Ants Go Marching.
+    /**
+     * Sings a verse of Old MacDonald.
      * 
-     * @param animal for the type of animal
-     * @param sound for the sound the animal makes
+     * @param animal for the animal present
+     * @param action for the sound the animal makes
      */
-    public static void singIt(String animal, String sound) 
+    public static void singIt(String animal, String sound)// Consolidates the invidual lines into verses 
     {
-        eieio();
+        //following lines activate lines of the song
+        eieio();       
         hadA(animal);
         withA(sound);
         eieio();
-        System.out.println();
+        System.out.println(); //Allows for spacing between verses
     }
 
-    
-     /**
-     * Calls singIt() for each verse.
+    /**
+     * Sings a verse of Old MacDonald
      */
-    public static void main(String[] args) 
+    public static void main(String[] args)// Outputs a verse for each instance of singIt();  
     {
-        System.out.println("Old MacDonald Had A Farm\n"); 
-
+        System.out.println("Old MacDonald Had A Farm\n"); // Gives song a title
+        // Below, list the name of the animal and the sound respectively
         singIt("duck", "quack");
         singIt("cow", "moo");
         singIt("horse", "neigh");
-        singIt("platypus","gdggdggddgdg");        
+        singIt("platypus","gdggdggddgdg");
+        //Add more animals and sounds below here
     }
     
 }

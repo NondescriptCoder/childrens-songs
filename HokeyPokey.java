@@ -63,6 +63,7 @@ public class HokeyPokey
 	putItOut(p);
 	putItIn(p);
 	shakeIt();
+	System.out.println();
 	}
 
 

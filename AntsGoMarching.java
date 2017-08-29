@@ -61,6 +61,7 @@ public class AntsGoMarching
         System.out.println("And they all go marching down into the ground");
         System.out.println("To get out of the rain");
         System.out.println("Boom, boom, boom, boom!");
+        System.out.println("");
        }
     }
 
@@ -72,6 +73,7 @@ public class AntsGoMarching
      */
     public static void singIt(String n, String action) 
     {
+        goMarching(n);
         goMarching(n);
         noHurrah(n);
         littleAnt(action);
@@ -90,7 +92,7 @@ public class AntsGoMarching
         singIt("two","tie his shoe");
         singIt("three","climb a tree");
         singIt("four","shut the door");
-        singIt("five","take the dive");
+        singIt("five","take a dive");
         singIt("six","pick up sticks");
         singIt("seven","pray to heaven");
         singIt("eight","rollerskate");
